@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body{
+    margin:0;
+    background:transparent;
+    font-family:Arial;
+    font-size:48px;
+    font-weight:bold;
+    text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="reloj"></div>
+
+<script>
+function actualizarReloj(){
+    const ahora = new Date();
+    document.getElementById("reloj").innerHTML =
+        ahora.toLocaleTimeString();
+}
+setInterval(actualizarReloj, 1000);
+actualizarReloj();
+</script>
+</body>
+</html>
